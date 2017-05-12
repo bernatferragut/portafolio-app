@@ -1,3 +1,24 @@
-<h1>
-  {{title}}
-</h1>
+<header>
+  <div class="row">
+
+    <div class="columns large-4 small-10 header-left">
+      <a href="#" id="auth-lnk">Bernat Ferragut</a>
+      <p class="subtxt">Visual Designer / Front End Developer</p>
+    </div>
+
+    <div class="columns large-8 small-2 header-left">
+      <img src="assets/menu.svg" id="menu">
+      <ul>
+        <li id="exit"><img src="assets/close.svg"></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+<!--ROUTER-->
+<router-outlet></router-outlet>
