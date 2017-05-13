@@ -37,6 +37,10 @@ header ul li img{
     float: right;
 }
 
+.show{
+    display: block !important;
+}
+
 /* min-width 1025px, large screens */
 @media only screen and (min-width: 64.063em){
     #exit {
@@ -52,7 +56,7 @@ header ul li img{
 @media only screen and (max-width: 64.063em){
     header ul {
         display: none;
-        background: #000;
+        background: #454545;
         position: absolute;
         height:100%;
         top: 0;
@@ -85,5 +89,44 @@ header ul li img{
         float: none;
         margin: 20px auto;
         cursor: pointer;
+    }
+    .header-left {
+        padding-left: 1.5em;
+    }
+    // Anim Menu definition
+    .animMenu {
+        animation: slide-in 0.5s forwards;
+        -webkit-animation: slide-in 0.5s forwards;
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+    }
+
+    @keyframes slide-in {
+        100% { transform: translateX(0%); }
+    }
+
+    @-webkit-keyframes slide-in {
+        100% { -webkit-transform: translateX(0%); }
+    }
+}
+
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 40.063em) and (max-width: 64em){
+    header {
+        padding: 2rem 0;
+    }
+}
+
+/* min width 640px, mobile-only styles */
+@media only screen and (max-width: 40em){
+    header{
+        padding: 1rem 0;
+    }
+    #auth-lnk {
+        font-size: 1.4em;
+    }
+
+    p.subtxt {
+        font-size: .85em;
     }
 }

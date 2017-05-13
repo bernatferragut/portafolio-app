@@ -7,9 +7,9 @@
     </div>
 
     <div class="columns large-8 small-2 header-left">
-      <img src="assets/images/menu.svg" id="menu">
-      <ul>
-        <li id="exit"><img src="assets/images/close.svg"></li>
+      <img src="assets/images/menu.svg" id="menu" (click)="toggle()">
+      <ul [ngClass]="{show: opened, animMenu: opened}">
+        <li id="exit"><img src="assets/images/close.svg" (click)="toggle()"></li>
         <li><a href="#">Home</a></li>
         <li><a href="#">Work</a></li>
         <li><a href="#">About</a></li>
